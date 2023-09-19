@@ -22,7 +22,7 @@ for _ in range(NR_OF_WORDS):
 
 # ---------------------------- ACCEPT AFTER SPACE ------------------------------- #
 def accept_after_space(event):
-    text_generated_label_1.configure(style="Background.TLabel")
+    text_generated_label_1.configure(style="Font.TLabel")
     print("tak, działa")
     #     #Tutaj dać generację kolejnego słowa, czy coś
 
@@ -62,12 +62,12 @@ text_label.grid(column=0, row=3, pady=25)
 # text_generated_label_1.grid(column=0, row=4)
 
 style = ttk.Style()
-style.configure("Background.TLabel", background="red")
+style.configure("Font.TLabel", background=COLOUR_PALETTE[0], foreground=COLOUR_PALETTE[3])
 text_generated_label_1 = ttk.Label(text=RANDOM_WORDS[:5], font=(FONT_NAME, 12))
 text_generated_label_1.grid(column=0, row=4)
 
 text_generated_label_2 = Label(text=RANDOM_WORDS[5:10], font=(FONT_NAME, 12), bg=COLOUR_PALETTE[0], fg=COLOUR_PALETTE[4])
-text_generated_label_2.grid(column=0, row=5)
+text_generated_label_2.grid(column=1, row=5)
 
 text_generated_label_3 = Label(text=RANDOM_WORDS[10:15], font=(FONT_NAME, 12), bg=COLOUR_PALETTE[0], fg=COLOUR_PALETTE[4])
 text_generated_label_3.grid(column=0, row=6)
