@@ -61,13 +61,9 @@ text_label.grid(column=0, row=3, pady=25)
 # style.configure("Green.TLabel", foreground=COLOUR_PALETTE[2], background=COLOUR_PALETTE[0])
 # text_generated_label_1.grid(column=0, row=4)
 
-background_color = COLOUR_PALETTE[0]
 style = ttk.Style()
-style.configure("Background.TFrame", background="red")
-text_generated_frame_1 = ttk.Frame(style="Background.TFrame")
-text_generated_frame_1.grid(column=0, row=4)
 style.configure("Background.TLabel", background="red")
-text_generated_label_1 = ttk.Label(text_generated_frame_1, text=RANDOM_WORDS[:5], font=(FONT_NAME, 12))
+text_generated_label_1 = ttk.Label(text=RANDOM_WORDS[:5], font=(FONT_NAME, 12))
 text_generated_label_1.grid(column=0, row=4)
 
 text_generated_label_2 = Label(text=RANDOM_WORDS[5:10], font=(FONT_NAME, 12), bg=COLOUR_PALETTE[0], fg=COLOUR_PALETTE[4])
